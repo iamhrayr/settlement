@@ -7,7 +7,7 @@ import router from "./routes";
 import { AppDataSource } from "./data-source";
 
 const app = express();
-const port = 3333;
+const port = process.env.PORT || 3333;
 
 app.use(cors());
 app.use(bodyParser.json());
